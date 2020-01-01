@@ -11,7 +11,12 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
+    rules: [
+      {
+        test: /\.png$/,
+        loader: "url-loader?mimetype=image/png" 
+     },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
