@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  PS: How about now Slack?
+  PS: F*ck Sl*ck
 </p>
 
 ![demo](https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfao.png)
