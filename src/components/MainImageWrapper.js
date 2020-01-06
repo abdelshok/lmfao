@@ -30,7 +30,7 @@ const ImageWrapper = styled.div`
     display: block;
 `
 
-const initialMsg = () => "LMFAO is the only (original) chat app for the terminal.\n\nIt is human-focused. LMFAO doesn't record any of your conversations and allows you to message friends and coworkers effortlessly.\n\nIt is secure. LMFAO protects user privacy by using end to end encryption to prevent anyone (us included) from tracking user data.\n\nMore importantly, it is fun. Fun with a capital F. You can join public channels or create private channels to talk with anyone while giving the impression that you are doing intense engineering work.\n\nType 'lmfao' in order to see a preview of the application.";
+const initialMsg = () => "LMFAO is the only (original) chat app for the terminal.\n\nIt is human-focused. LMFAO doesn't record any of your conversations and allows you to message friends and coworkers effortlessly.\n\nIt is secure. LMFAO protects user privacy by using end to end encryption to prevent anyone (me included) from tracking user data.\n\nMore importantly, it is fun. Fun with a capital F. You can join public channels or create private channels to talk with anyone while giving the impression that you are doing intense engineering work.\n\nType 'lmfao' in order to see a preview of the application.";
 const lastMsg = () => "Scroll down to learn more about LMFAO's features"
 const lmfaoMsg = () => "LMFAO \n \n 🙊 \n \n 🙉 \n \n 🙈 \n \n \nYour one and only chat app for the terminal. Please type in 'npm' for a link to learn more about this package or scroll down.\n"
 const npmMsg = () => "You can learn more about LMFAO at npmjs.com/package/lmfao.\n\nPlease type 'open' to open the page in another tab."

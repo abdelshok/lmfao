@@ -29,7 +29,7 @@ class ContactMeComponent extends Component {
     }
 
 
-    firstMsg = () => "You will be able to message me through this terminal window. You can go back to the first step at anytime by typing 'first'\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Noam Chomsky "
+    firstMsg = () => "My name is Abdel Shokair. I'm a software engineer based in NYC and Paris.\n\nYou will be able to email me through this terminal window. You can go back to this step and re-enter your information at anytime, if you've made a mistake, by typing 'first'.\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Noam Chomsky "
     secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email.\nIe. email elon@musk.com`
     thirdMsg = () => `Your email is ${this.state.email}.\n\nNow please type in 'message' followed by your message. Only press enter when you are ready to send it.`;
     fourthMsg = () => "Message successfully sent.";
