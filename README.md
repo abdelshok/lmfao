@@ -14,7 +14,7 @@
 
 
 <p align="center">
-  I used the simple-react-app as the boilerplate of my code. It ended up being unnecessary as create-react-app still remains a perfect alternative. Still, thank you to the contributors of that boilerplate for putting in the time and effort in creating their boilerplate. It is very muchappreciated.
+  I used <a href="https://github.com/crsandeep/simple-react-full-stack"> simple-react-full-stack </a> as the boilerplate for my code. It was a perfect alternative to the very useful create-react-app boilerplate released by Facebook because it already includes Express and Node.js. Thank you to the contributors of simple-react-full-stack, such as Sandeep Raveesh <a href="https://github.com/crsandeep"> @crsanddeep </a>, for this boilerplate and for putting in the time and effort in creating it. It is very much appreciated.
 </p>
 
 <p align="center">
