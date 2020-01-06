@@ -22,6 +22,7 @@ const NavigationBarButton = styled.span`
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
 ` 
 
 class NavigationBarRightButtons extends Component {

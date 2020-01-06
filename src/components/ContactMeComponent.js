@@ -29,8 +29,8 @@ class ContactMeComponent extends Component {
     }
 
 
-    firstMsg = () => "You will be able to message me through this fake terminal window. You can go back to the first step at anytime by typing 'first'\n\n In order to contact me, please type in 'name' followed by your full name: "
-    secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email. Ie. email elon@musk.com`
+    firstMsg = () => "You will be able to message me through this terminal window. You can go back to the first step at anytime by typing 'first'\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Noam Chomsky "
+    secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email.\nIe. email elon@musk.com`
     thirdMsg = () => `Your email is ${this.state.email}.\n\nNow please type in 'message' followed by your message. Only press enter when you are ready to send it.`;
     fourthMsg = () => "Message successfully sent.";
 
@@ -76,7 +76,16 @@ class ContactMeComponent extends Component {
          });    
     }
 
+    flushOutState = () => {
+        this.setState({
+            email: '',
+            name: '',
+            message: '',
+        })
+    }
+
     render() {
+        console.log('this state', this.state);
         return (
 
             <div>
@@ -96,13 +105,6 @@ class ContactMeComponent extends Component {
                             this.setName(fullName);
                             this.changeStep('contact2');
                         },
-                        // options: [
-                        //   {
-                        //     name: 'color',
-                        //     description: 'The color the output should be',
-                        //     defaultValue: 'white',
-                        //   },
-                        // ],
                       },
                 }}
                 msg={this.firstMsg()}
@@ -124,9 +126,13 @@ class ContactMeComponent extends Component {
                             console.log('Email is', email);
                             this.setEmail(email);
                             this.changeStep('contact3');
-                        },
-
-                      },
+                        }
+                    },
+                    first: {
+                        method: (args, print, command) => {
+                            this.changeStep('contact1');
+                        }
+                    }
                 }}
                 msg={this.secondMsg()}
                 />                 
@@ -140,15 +146,19 @@ class ContactMeComponent extends Component {
                 barColor='black'
                 style={{ fontWeight: "bold", fontSize: "1em", height: "60%", textAlign: 'justify'}} // Overrides the parent style
                 commands={{
-                    message: {
-                        method: (args, print, runCommand) => {
-                            let arrayOfWords = args._;
-                            let message = joinWordsTogether(arrayOfWords);
-                            this.setMessage(message);
-                            this.changeStep('contact4');
+                        message: {
+                            method: (args, print, runCommand) => {
+                                let arrayOfWords = args._;
+                                let message = joinWordsTogether(arrayOfWords);
+                                this.setMessage(message);
+                                this.changeStep('contact4');
+                            }
                         },
-
-                      },
+                        first: {
+                            method: (args, print, runCommand) => {
+                                this.changeStep('contact1');
+                            }
+                        }
                 }}
                 msg={this.thirdMsg()}
                 />                 
@@ -162,7 +172,16 @@ class ContactMeComponent extends Component {
                 backgroundColor='black'
                 barColor='black'
                 style={{ fontWeight: "bold", fontSize: "1em", height: "60%", textAlign: 'justify'}} // Overrides the parent style
+                commands={{
+                    first: {
+                        method: (args, print, runCommand) => {
+                            this.flushOutState();
+                            this.changeStep('contact1');
+                        }
+                    }
+                }}
                 msg={this.fourthMsg()}
+
                 />                 
                 }   
             </div>
