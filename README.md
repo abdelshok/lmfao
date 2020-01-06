@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  This is a presentational website for the NPM package that I created named "lmfao" which leverages end-to-end encryption to allow anyone (software engineers, developers, product managers, students, etc.) to chat with their coworkers and friends through the terminal on public or password-protected (by the user) private channels. Conversations are not recorded, Google Cloud services are used to store and authenticate users, while AWS is used to relay messages. Current maximum capacity for one single open channel is 1,000 users although I doubt that a single channel channel will most ever reach this level of chaos.
+  This is a presentational website for the NPM package that I created named "lmfao" which leverages end-to-end encryption to allow anyone (software engineers, developers, product managers, students, etc.) to chat with their coworkers and friends through the terminal on public or password-protected (by the user) private channels. Conversations are not recorded, Google Cloud services are used to store and authenticate users, while AWS is used to relay messages. Current maximum capacity for one single open channel is 1,000 users although I doubt that a single channel channel will  ever reach this level of chaos.
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  PS: F*ck Sl*ck
+  PS: How about now Slack?
 </p>
 
 ![demo](https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfao.png)
