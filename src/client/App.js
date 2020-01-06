@@ -26,15 +26,23 @@ export default class App extends Component {
     }
   }
 
+  changePage = (newPage) => {
+    console.log('Main page is now', newPage);
+    this.setState({
+      mainPage: newPage
+    })
+  }
+
   // Rename the MainPageImageContainer to AboutPageCOntianer
   // Create the Contact Me using Twilio or simply an email API to send an email
   // Think about the About and getting Started 
   render() {
     const { username } = this.state;
+    console.log('@App re-renderded with value', this.state.mainPage);
     return (
         <AppComponentWrapper>
-          <NavigationBarContainer />
-          <MainPageImageContainer />
+            <NavigationBarContainer changePage={this.changePage} />
+            <MainPageImageContainer mainPage={this.state.mainPage} />
         </AppComponentWrapper>
     );
   }

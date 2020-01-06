@@ -18,11 +18,11 @@ const NavigationBarMenuWrapper = styled.div`
     justify-content: space-between;
 `
 
-const NavigationBarMenu = () => {
+const NavigationBarMenu = (props) => {
     return (
         <NavigationBarMenuWrapper>
             <NavigationBarLogo />
-            <NavigationBarRightButtons />
+            <NavigationBarRightButtons changePage={props.changePage} />
         </NavigationBarMenuWrapper>
     )
 }

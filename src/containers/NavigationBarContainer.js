@@ -21,8 +21,8 @@ class NavigationBarContainer extends Component {
 
     render() {
         return (
-            <NavigationBarWrapper>
-                <NavigationBarMenu />
+            <NavigationBarWrapper >
+                <NavigationBarMenu changePage={this.props.changePage} />
             </NavigationBarWrapper>
         )
     }

@@ -24,14 +24,21 @@ class MainPageImageContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            mainPage: 'about'
         }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        console.log('Re-rendering to ensure props are passed down with value', nextProps.mainPage);
+        this.setState({
+            mainPage: nextProps.mainPage
+        })
     }
 
     render() {
         return (
             <TopOfPageImageWrapper>
-                <MainImageWrapper />
+                <MainImageWrapper mainPage={this.state.mainPage} />
                 <MainPageSubTextComponent />
      
             </TopOfPageImageWrapper>

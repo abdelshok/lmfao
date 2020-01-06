@@ -24,20 +24,30 @@ const NavigationBarButton = styled.span`
     padding-right: 20px;
 ` 
 
-const NavigationBarRightButtons = () => {
-    return (
-        <NavigationBarButtonWrapper>
-            <NavigationBarButton> 
-                About
-            </NavigationBarButton>
-            <NavigationBarButton> 
-                Getting Started
-            </NavigationBarButton>
-            <NavigationBarButton> 
-                Contact Me
-            </NavigationBarButton>
-        </NavigationBarButtonWrapper>
-    )
+class NavigationBarRightButtons extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            // Empty for now
+        }
+    }
+
+    callChangePage = (event) => {
+        this.props.changePage(event.target.id);
+    }
+
+    render() {
+        return (
+            <NavigationBarButtonWrapper>
+                <NavigationBarButton id="about" onClick={this.callChangePage}> 
+                    About
+                </NavigationBarButton>
+                <NavigationBarButton id="contact" onClick={this.callChangePage}> 
+                    Contact Me
+                </NavigationBarButton>
+            </NavigationBarButtonWrapper>
+        )
+    }
 }
 
 export default NavigationBarRightButtons;
