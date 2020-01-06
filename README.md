@@ -9,12 +9,15 @@
 </p>
 
 <p align="center">
-  This is a presentational website for the NPM package that I created named "lmfao" which allows any engineer, developer, product manager, student, and general person to chat with their friends and coworkers through the terminal. 
+  This is a presentational website for the NPM package that I created named "lmfao" which leverages end-to-end encryption to allow anyone (software engineers, developers, product managers, students, etc.) to chat with their coworkers and friends through the terminal on public or password-protected (by the user) private channels. Conversations are not recorded, Google Cloud services are used to store and authenticate users, while AWS is used to relay messages. Current maximum capacity for one single open channel is 1,000 users although one channel will most likely never reach that level of chaos.
 </p>
 
 <p align="center">
-  No conversations are recorded, users can chat on public channels, or create private channels that are password protected to chat with their friends privately, and end-to-end encryption is implemented in order to prevent *anyone* from being able to track user messages. 
+  F*ck Sl*ck
 </p>
 
+<p align="center">
+  PS: I used the simple-react-app as the boilerplate of my code. It ended up being unnecessary as create-react-app still remains a perfect alternative. Still, thank you to the contributors of that boilerplate for putting in the time and effort in creating their boilerplate. It is very muchappreciated.
+</p>
 
 ![demo](https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfao.png)
