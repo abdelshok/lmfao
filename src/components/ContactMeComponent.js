@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { render } from 'react-dom';
 import Terminal from 'terminal-in-react';
+import { EmailJSResponseStatus } from 'emailjs-com';
 
 
 const joinWordsTogether = (arrayOfNames) => {
@@ -58,6 +59,21 @@ class ContactMeComponent extends Component {
         this.setState({
             message: message
         })
+        this.sendEmail(message);
+    }
+
+    sendEmail = (message) => {
+        let templateParams = {
+            name: this.state.name,
+            email: this.state.email,
+            message: message,
+        }
+        emailjs.send('gmail', 'template_euqlPtfy', templateParams)
+        .then(function(response) {
+            console.log('EmailJS Success!', response.status, response.text);
+         }, function(error) {
+            console.log('Failed...', error);
+         });    
     }
 
     render() {
