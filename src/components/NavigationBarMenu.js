@@ -42,7 +42,13 @@ const NavigationBarMenuWrapper = styled.div`
 
 const NavigationBarLeftButton = styled(NavigationBarButton)`
     font-size: 18px; 
-    color: ${props => props.buttonColor === 'white' ? 'white ': 'black'};
+    color: ${props => props.buttonColor === 'white' ? 'white ': 'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
+    animation: ${fade} 9s ease infinite;
+    background: ${props => props.buttonColor === 'white' ? 'white' :  'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
+    background-size: 2000% 2000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 `
 
 const LeftNavBarWrapper = styled.div`
