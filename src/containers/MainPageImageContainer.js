@@ -4,20 +4,35 @@
 
 // External Packages
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 // Internal Modules
 // Components
 import MainImageWrapper from '../components/MainImageWrapper';
 import MainPageSubTextComponent from '../components/MainPageSubTextComponent';
 
 const TopOfPageImageWrapper = styled.div`
-    padding-top: 140px;
-    background-color: inherit;
+    padding-top: 115px;
+    background: inherit;
+    background-image: color; 
     display: flex;
     align-items: center;
-    height: auto; 
+    height: 100%; 
     width: 100%;
     flex-direction: column;
+    background-image: inherit;
+    animation: ${fade} 9s ease infinite;
+`
+
+const fade = keyframes`
+  0% {
+    background-position:0% 50%
+  }
+  50%{
+    background-position:100% 50%
+}
+  100% {
+    background-position:0% 50%;
+  }
 `
 
 class MainPageImageContainer extends Component {
@@ -38,9 +53,7 @@ class MainPageImageContainer extends Component {
     render() {
         return (
             <TopOfPageImageWrapper>
-                <MainImageWrapper mainPage={this.state.mainPage} />
-                <MainPageSubTextComponent />
-     
+                <MainImageWrapper mainPage={this.state.mainPage} />     
             </TopOfPageImageWrapper>
         )
     }

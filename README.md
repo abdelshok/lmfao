@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  PS: Why use Slack when you can give the impression that you're working and use LMFAO.
+  PS: Slack... really?
 </p>
 
 ![demo](https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfao.png)

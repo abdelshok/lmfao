@@ -5,6 +5,8 @@
 // External Packages
 import React, { Component } from 'react';
 import styled from 'styled-components';
+// Internal Modules
+import NavigationBarButton from '../styledComponents/NavigationBarButton';
 
 const NavigationBarButtonWrapper = styled.div`
     width: auto;
@@ -15,15 +17,11 @@ const NavigationBarButtonWrapper = styled.div`
 `
 // Maybe move the top and left styling to the parent component
 
-const NavigationBarButton = styled.span`
-    font-family: inherit;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
-` 
+
+const NavigationBarRightButton = styled(NavigationBarButton)`
+    color: ${ props => props.buttonColor === 'white'? 'white': 'black'}
+`
+
 
 class NavigationBarRightButtons extends Component {
     constructor(props) {
@@ -40,12 +38,12 @@ class NavigationBarRightButtons extends Component {
     render() {
         return (
             <NavigationBarButtonWrapper>
-                <NavigationBarButton id="about" onClick={this.callChangePage}> 
+                <NavigationBarRightButton id="about" onClick={this.callChangePage} buttonColor={this.props.buttonColor} > 
                     About
-                </NavigationBarButton>
-                <NavigationBarButton id="contact" onClick={this.callChangePage}> 
+                </NavigationBarRightButton>
+                <NavigationBarRightButton id="contact" onClick={this.callChangePage} buttonColor={this.props.buttonColor} > 
                     Contact Me
-                </NavigationBarButton>
+                </NavigationBarRightButton>
             </NavigationBarButtonWrapper>
         )
     }
