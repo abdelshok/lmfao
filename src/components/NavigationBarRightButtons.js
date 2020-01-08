@@ -39,9 +39,9 @@ class NavigationBarRightButtons extends Component {
     render() {
         return (
             <NavigationBarButtonWrapper>
-                <NavigationBarRightButton id="about" onClick={this.callChangePage} buttonColor={this.props.buttonColor} > 
+                {/* <NavigationBarRightButton id="about" onClick={this.callChangePage} buttonColor={this.props.buttonColor} > 
                     About
-                </NavigationBarRightButton>
+                </NavigationBarRightButton> */}
                 <NavigationBarRightButton id="contact" onClick={this.callChangePage} buttonColor={this.props.buttonColor} > 
                     Contact Me
                 </NavigationBarRightButton>

@@ -59,7 +59,7 @@ const NavigationBarMenu = (props) => {
     return (
         <NavigationBarMenuWrapper pageColor={props.pageColor} >
             <LeftNavBarWrapper>
-                <NavigationBarLogo buttonColor={props.buttonColor} />
+                <NavigationBarLogo buttonColor={props.buttonColor} changePage={props.changePage} />
 
                 {
                     props.buttonColor === 'white' &&

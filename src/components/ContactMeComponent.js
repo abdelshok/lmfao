@@ -25,11 +25,12 @@ class ContactMeComponent extends Component {
             email: '',
             name: '',
             message: '',
+            steps: ['contact1', 'contact2', 'contact3', 'contact4']
         }
     }
 
 
-    firstMsg = () => "My name is Abdel Shokair. I'm a software engineer based in NYC and Paris.\n\nYou will be able to email me through this terminal window. You can go back to this step and re-enter your information at anytime, if you've made a mistake, by typing 'first'.\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Noam Chomsky "
+    firstMsg = () => "My name is Abdel Shokair. I'm a software engineer based in NYC and Paris.\n\nHere is my contact information if you need it:\n\nEmail: abdelshokair@gmail.com\nLinkedIn: https://www.linkedin.com/in/abdelazizshokair/ \n\nAlternatively, you can email me through this terminal window. If you've made a mistake along the way, you can come back to the previous step at any time by typing 'back'.\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Noam Chomsky "
     secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email.\nIe. email elon@musk.com`
     thirdMsg = () => `Your email is ${this.state.email}.\n\nNow please type in 'message' followed by your message. Only press enter when you are ready to send it.`;
     fourthMsg = () => "Message successfully sent.";
@@ -127,7 +128,7 @@ class ContactMeComponent extends Component {
                             this.changeStep('contact3');
                         }
                     },
-                    first: {
+                    back: {
                         method: (args, print, command) => {
                             this.changeStep('contact1');
                         }
@@ -153,9 +154,9 @@ class ContactMeComponent extends Component {
                                 this.changeStep('contact4');
                             }
                         },
-                        first: {
+                        back: {
                             method: (args, print, runCommand) => {
-                                this.changeStep('contact1');
+                                this.changeStep('contact2');
                             }
                         }
                 }}
@@ -172,10 +173,10 @@ class ContactMeComponent extends Component {
                 barColor='black'
                 style={{ fontWeight: "bold", fontSize: "1em", height: "60%", textAlign: 'justify'}} // Overrides the parent style
                 commands={{
-                    first: {
+                    back: {
                         method: (args, print, runCommand) => {
                             this.flushOutState();
-                            this.changeStep('contact1');
+                            this.changeStep('contact3');
                         }
                     }
                 }}
