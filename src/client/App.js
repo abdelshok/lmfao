@@ -10,11 +10,8 @@ import NavigationBarContainer from '../containers/NavigationBarContainer';
 import TestComponent from '../components/TestComponent';
 // Containers
 import MainPageImageContainer from '../containers/MainPageImageContainer';
-
 // Styling
 import './app.css';
-// Assets
-import ReactImage from './react.png';
 
 const fade = keyframes`
   0% {
@@ -35,6 +32,7 @@ const NewAppComponentWrapper = styled(AppComponentWrapper)`
   width: 100%;
   height: 100%;
   background-size: 2000% 2000%;
+  overflow: hidden;
 `
 
 export default class App extends Component {
@@ -49,7 +47,6 @@ export default class App extends Component {
   }
 
   changePage = (newPage) => {
-    console.log('Main page is now', newPage);
     this.setState({
       mainPage: newPage
     })
@@ -73,8 +70,6 @@ export default class App extends Component {
   // Create the Contact Me using Twilio or simply an email API to send an email
   // Think about the About and getting Started 
   render() {
-    const { username } = this.state;
-    console.log('@App re-rendered with value', this.state.pageColor);
     return (
         <NewAppComponentWrapper pageColor={this.state.pageColor}>
             <NavigationBarContainer buttonColor={this.state.buttonColor} pageColor={this.state.pageColor} changePage={this.changePage} changePageColor={this.changePageColor} />

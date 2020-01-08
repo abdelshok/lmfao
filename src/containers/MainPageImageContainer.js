@@ -11,7 +11,7 @@ import MainImageWrapper from '../components/MainImageWrapper';
 import MainPageSubTextComponent from '../components/MainPageSubTextComponent';
 
 const TopOfPageImageWrapper = styled.div`
-    padding-top: 115px;
+    padding-top: 130px;
     background: inherit;
     background-image: color; 
     display: flex;
@@ -20,20 +20,9 @@ const TopOfPageImageWrapper = styled.div`
     width: 100%;
     flex-direction: column;
     background-image: inherit;
-    animation: ${fade} 9s ease infinite;
+    position: fixed;
 `
 
-const fade = keyframes`
-  0% {
-    background-position:0% 50%
-  }
-  50%{
-    background-position:100% 50%
-}
-  100% {
-    background-position:0% 50%;
-  }
-`
 
 class MainPageImageContainer extends Component {
     constructor(props) {
@@ -44,7 +33,6 @@ class MainPageImageContainer extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log('Re-rendering to ensure props are passed down with value', nextProps.mainPage);
         this.setState({
             mainPage: nextProps.mainPage
         })

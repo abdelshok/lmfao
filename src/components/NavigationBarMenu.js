@@ -5,7 +5,6 @@
 // External Packages
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
-
 // Internal Modules
 // Components
 import NavigationBarLogo from './NavigationBarLogo';
@@ -46,11 +45,14 @@ const NavigationBarLeftButton = styled(NavigationBarButton)`
     color: ${props => props.buttonColor === 'white' ? 'white ': 'black'};
 `
 
+const LeftNavBarWrapper = styled.div`
+    text-align: center;
+`
+
 const NavigationBarMenu = (props) => {
-    console.log('Props passed to @NavigationBarMenu', props);
     return (
         <NavigationBarMenuWrapper pageColor={props.pageColor} >
-            <div>
+            <LeftNavBarWrapper>
                 <NavigationBarLogo buttonColor={props.buttonColor} />
 
                 {
@@ -67,8 +69,7 @@ const NavigationBarMenu = (props) => {
                     </NavigationBarLeftButton>
                 }
 
-
-            </div>
+            </LeftNavBarWrapper>
             <NavigationBarRightButtons changePage={props.changePage} buttonColor={props.buttonColor} />
         </NavigationBarMenuWrapper>
     )

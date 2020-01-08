@@ -12,9 +12,10 @@ const NavigationBarButtonWrapper = styled.div`
     width: auto;
     height: auto;
     padding-right: 20px;
-    align-items: center;
     display: flex;
+    padding-top: 8px;
 `
+
 // Maybe move the top and left styling to the parent component
 
 

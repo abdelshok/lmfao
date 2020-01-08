@@ -26,6 +26,7 @@ const ImageWrapper = styled.div`
     justify-content: center;
     display: flex;
     width: 500px;
+    height: 100%;
     display: block;
 `
 
