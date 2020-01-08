@@ -64,14 +64,14 @@ const NavigationBarMenu = (props) => {
                 {
                     props.buttonColor === 'white' &&
                     <NavigationBarLeftButton id="disable" onClick={props.changePageColor} buttonColor={props.buttonColor}> 
-                        Disable Rainbow
+                        Disable Colors
                     </NavigationBarLeftButton>
                 }
 
                 {
                     props.buttonColor === 'black' &&
                     <NavigationBarLeftButton id="enable" onClick={props.changePageColor} buttonColor={props.buttonColor}> 
-                        Enable Rainbow
+                        Enable Colors
                     </NavigationBarLeftButton>
                 }
 
