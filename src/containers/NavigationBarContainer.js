@@ -24,13 +24,17 @@ const fade = keyframes`
 `
 
 const NavigationBarDynamicWrapper = styled(NavigationBarWrapper)`
-    background: ${props => props.pageColor === 'white' ? 'white' : 'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
-    background-image: ${props => props.pageColor === 'white' ? 'white' :  'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
+    background: ${props => props.pageColor === 'white' ? 'white' : 'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'};
+    background-image: ${props => props.pageColor === 'white' ? 'white' :  'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'};
     animation: ${fade} 9s ease infinite;
     width: 100%;
     height: 100%;
     background-size: 2000% 2000%;
 `;
+
+// Pastel: 'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'
+// Rainbow: 'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'
+
 
 class NavigationBarContainer extends Component {
 

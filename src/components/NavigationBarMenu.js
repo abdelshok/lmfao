@@ -29,8 +29,8 @@ const NavigationBarMenuWrapper = styled.div`
     width: 100%;
     display: flex; 
     justify-content: space-between;
-    background: ${props => props.pageColor === 'white' ? 'white' : 'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
-    background-image: ${props => props.pageColor === 'white' ? 'white' :  'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
+    background: ${props => props.pageColor === 'white' ? 'white' : 'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)' };
+    background-image: ${props => props.pageColor === 'white' ? 'white' :  'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'};
     animation: ${fade} 9s ease infinite;
     width: 100%;
     height: 100%;
@@ -39,12 +39,14 @@ const NavigationBarMenuWrapper = styled.div`
     padding-left: 10px;
     padding-right: 10px;
 `
+// Rainbow: 'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'
+// Pastel: 'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'
 
 const NavigationBarLeftButton = styled(NavigationBarButton)`
     font-size: 18px; 
-    color: ${props => props.buttonColor === 'white' ? 'white ': 'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
+    color: ${props => props.buttonColor === 'white' ? 'white ': 'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'};
     animation: ${fade} 9s ease infinite;
-    background: ${props => props.buttonColor === 'white' ? 'white' :  'linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)'};
+    background: ${props => props.buttonColor === 'white' ? 'white' :  'linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB)'};
     background-size: 2000% 2000%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
