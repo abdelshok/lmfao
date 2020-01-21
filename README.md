@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfaoLogo.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/abdelshok/lmfao/tree/master/assets/images/lmfaoLogo.png" width="100" />
 </div>
 <h1 align="center">
   <a href="https://vast-ravine-41433.herokuapp.com/" target="_blank">lmfao.com</a>
@@ -22,4 +22,4 @@
 </p>
 
 
-![demo](https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfao.png)
+![demo](https://raw.githubusercontent.com/abdelshok/lmfao/tree/master/assets/images/lmfao.png)
