@@ -11,7 +11,7 @@ import MainImageWrapper from '../components/MainImageWrapper';
 import MainPageSubTextComponent from '../components/MainPageSubTextComponent';
 
 const TopOfPageImageWrapper = styled.div`
-    padding-top: 130px;
+    padding-top: 145px;
     background: inherit;
     background-image: color; 
     display: flex;

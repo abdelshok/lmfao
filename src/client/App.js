@@ -43,8 +43,8 @@ export default class App extends Component {
     super(props);
     this.state = {
       mainPage: 'about',
-      pageColor: 'rainbow',
-      buttonColor: 'white',
+      pageColor: 'white',
+      buttonColor: 'black',
     }
   }
 
@@ -74,7 +74,7 @@ export default class App extends Component {
   render() {
     return (
         <NewAppComponentWrapper pageColor={this.state.pageColor}>
-            <NavigationBarContainer buttonColor={this.state.buttonColor} pageColor={this.state.pageColor} changePage={this.changePage} changePageColor={this.changePageColor} />
+            <NavigationBarContainer buttonColor={this.state.buttonColor} mainPage={this.state.mainPage} pageColor={this.state.pageColor} changePage={this.changePage} changePageColor={this.changePageColor} />
             <MainPageImageContainer mainPage={this.state.mainPage} pageColor={this.state.pageColor} />
         </NewAppComponentWrapper>
     );

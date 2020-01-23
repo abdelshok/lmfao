@@ -61,9 +61,9 @@ const NavigationBarMenu = (props) => {
     return (
         <NavigationBarMenuWrapper pageColor={props.pageColor} >
             <LeftNavBarWrapper>
-                <NavigationBarLogo buttonColor={props.buttonColor} changePage={props.changePage} />
+                <NavigationBarLogo buttonColor={props.buttonColor} changePage={props.changePage} mainPage={props.mainPage} />
 
-                {
+                {/* {
                     props.buttonColor === 'white' &&
                     <NavigationBarLeftButton id="disable" onClick={props.changePageColor} buttonColor={props.buttonColor}> 
                         Disable Colors
@@ -75,10 +75,10 @@ const NavigationBarMenu = (props) => {
                     <NavigationBarLeftButton id="enable" onClick={props.changePageColor} buttonColor={props.buttonColor}> 
                         Enable Colors
                     </NavigationBarLeftButton>
-                }
+                } */}
 
             </LeftNavBarWrapper>
-            <NavigationBarRightButtons changePage={props.changePage} buttonColor={props.buttonColor} />
+            <NavigationBarRightButtons changePage={props.changePage} buttonColor={props.buttonColor} mainPage={props.mainPage}/>
         </NavigationBarMenuWrapper>
     )
 }

@@ -49,7 +49,7 @@ class NavigationBarContainer extends Component {
         console.log("Button color in @NavigationBarContainer", this.props);
         return (
             <NavigationBarWrapper>
-                <NavigationBarMenu changePage={this.props.changePage} pageColor={this.props.pageColor} changePageColor={this.props.changePageColor} buttonColor={this.props.buttonColor} />
+                <NavigationBarMenu changePage={this.props.changePage} pageColor={this.props.pageColor} changePageColor={this.props.changePageColor} buttonColor={this.props.buttonColor} mainPage={this.props.mainPage} />
             </NavigationBarWrapper>
         )
     }

@@ -29,12 +29,10 @@ class ContactMeComponent extends Component {
         }
     }
 
-
-    firstMsg = () => "My name is Abdel Shokair. I'm a software creator based in New York and Paris.\n\nHere is my contact information if you need it:\n\nEmail: abdelshokair@gmail.com\nLinkedIn: https://www.linkedin.com/in/abdelazizshokair/ \n\nAlternatively, you can email me through this terminal window. If you've made a mistake along the way, you can come back to the previous step at any time by typing 'back'.\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Elon Musk "
+    firstMsg = () => "My name is Abdel Shokair. I'm a software creator based in New York and Paris.\n\nHere is my contact information if you need it:\n\nWebsite: abdelshokair.tech\n\nEmail: abdelshokair@gmail.com\n\nLinkedIn: https://www.linkedin.com/in/abdelazizshokair/ \n\nAlternatively, you can email me through this terminal window. If you've made a mistake along the way, you can come back to the previous step at any time by typing 'back'.\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Elon Musk "
     secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email.\nIe. email elon@musk.com`
     thirdMsg = () => `Your email is ${this.state.email}.\n\nNow please type in 'message' followed by your message. Only press enter when you are ready to send it.`;
     fourthMsg = () => "Message successfully sent.";
-
 
     // Handler functions
 
