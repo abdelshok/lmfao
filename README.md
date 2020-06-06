@@ -3,10 +3,10 @@
    width="100" />
 </div>
 <h1 align="center">
-  <a href="https://vast-ravine-41433.herokuapp.com/" target="_blank">lmfao.com</a>
+  <a href="http://lmfao.tech/" target="_blank">lmfao.tech</a>
 </h1>
 <p align="center">
-  The first iteration of <a href="https://vast-ravine-41433.herokuapp.com/" target="_blank">lmfao.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+  The first iteration of <a href="https://vast-ravine-41433.herokuapp.com/" target="_blank">lmfao.tech</a> built with <a href="https://reactjs.org/" target="_blank">React</a>
 </p>
 
 <p align="center">

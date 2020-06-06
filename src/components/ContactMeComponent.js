@@ -9,12 +9,15 @@ import { render } from 'react-dom';
 import Terminal from 'terminal-in-react';
 import { EmailJSResponseStatus } from 'emailjs-com';
 
-
 const joinWordsTogether = (arrayOfNames) => {
     let joinedFullName = arrayOfNames.join(' ');
     console.log(joinedFullName);
     return joinedFullName;
 }
+
+const SpecialText = styled.span`
+color: green;
+`
 
 class ContactMeComponent extends Component {
 
@@ -29,8 +32,8 @@ class ContactMeComponent extends Component {
         }
     }
 
-    firstMsg = () => "My name is Abdel Shokair. I'm a software creator based in New York and Paris.\n\nHere is my contact information if you need it:\n\nWebsite: abdelshokair.tech\n\nEmail: abdelshokair@gmail.com\n\nLinkedIn: https://www.linkedin.com/in/abdelazizshokair/ \n\nAlternatively, you can email me through this terminal window. If you've made a mistake along the way, you can come back to the previous step at any time by typing 'back'.\n\nIn order to contact me, please type in 'name' followed by your full name. Ie. name Elon Musk "
-    secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email.\nIe. email elon@musk.com`
+    firstMsg = () => "My name is Abdel Shokair. I'm a software engineer based in New York and Paris.\n\nYou'll find my website at https://www.abdelshokair.tech\n\nMy contact information is abdelshokair@gmail.com\n\nAlternatively, if you want to contact me, you can use this pseudo-terminal window to send me an email. If you've made a mistake along the way, you can come back to the previous step at any time by typing 'back'.\n\nPlease type in 'name' followed by your full name.\nIe. name Nikola Tesla"
+    secondMsg = () => `Your name is ${this.state.name}\n\nNow please type 'email' followed by your email.\nIe. email nikola@tesla.com`
     thirdMsg = () => `Your email is ${this.state.email}.\n\nNow please type in 'message' followed by your message. Only press enter when you are ready to send it.`;
     fourthMsg = () => "Message successfully sent.";
 

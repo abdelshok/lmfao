@@ -19,7 +19,7 @@ const MainPageSubTextComponent = () => {
     return (
         <div>
         <TopOfPageSubText>
-            The only chat app for your terminal
+            A Node-based chat app for the terminal
         </TopOfPageSubText>
         </div>
     )

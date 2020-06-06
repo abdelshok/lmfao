@@ -15,6 +15,7 @@ const NavigationBarButtonWrapper = styled.div`
     display: flex;
     padding-top: 8px;
     flex-direction: column;
+    background-color: transparent;
 `
 
 // Maybe move the top and left styling to the parent component
@@ -41,17 +42,20 @@ const fade = keyframes`
 
 const BottomLine = styled.div`
   height: 3px;
-  width: 105px;
+  width: 40px;
   background-color: black;
   display: inline-block;
   margin: 0 auto;
   background: black;
   color: black;
-  background-image: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000);
-  background: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)s;
+  background-image: linear-gradient(270deg, #2300e4, #b900b2);
+  background: linear-gradient(270deg, #2300e4, #b900b2);
   background-size: 2000% 2000%;
   animation: ${fade} 2s ease infinite;
 `
+// Rainbow animation
+// background-image: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000);
+// background: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000);
 
 
 

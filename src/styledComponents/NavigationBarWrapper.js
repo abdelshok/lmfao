@@ -26,7 +26,7 @@ const NavigationBarWrapper = styled.div`
     background-image: linear-gradient(270deg, #FF9CEE, #FCC2FF, #B28DFF, #D5AAFF, #A79AFF, #AFF8DB, #ACE7FF, #BFFCC6, #FFFFD1, #FFABAB);    width: 100%;
     position: fixed;
     z-index: 10;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     animation: ${fade} 9s ease infinite;
 `
 

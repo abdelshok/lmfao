@@ -24,8 +24,9 @@ const NavBarContainer = styled.div`
 `
 const Logo = styled.p`
     font-family: inherit;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
+    font-style: bold;
     padding-left: 20px;
     padding-right: 20px;
     color: ${props => props.buttonColor === 'white' ? 'white' : 'black'};
@@ -39,17 +40,21 @@ const Logo = styled.p`
 
 const BottomLine = styled.div`
   height: 3px;
-  width: 117px;
+  width: 40px;
   background-color: black;
   display: inline-block;
   margin: 0 auto;
   background: black;
   color: black;
-  background-image: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000);
-  background: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000)s;
+  background-image: linear-gradient(270deg, #2300e4, #b900b2);
+  background: linear-gradient(270deg, #2300e4, #b900b2);
   background-size: 2000% 2000%;
   animation: ${fade} 2s ease infinite;
 `
+// Rainbow Animation
+// background-image: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000);
+// background: linear-gradient(270deg, #ff1212, #ff9b00, #f2ff00, #55ff00, #00ff76, #00ffb9, #004dff, #7200ff, #e200ff, #ff0000);
+
 
 class NavigationBarLogo extends Component {
 
