@@ -2,9 +2,6 @@
   <img alt="Logo"             src="https://raw.githubusercontent.com/abdelshok/lmfao/master/assets/images/lmfaoLogo.png"
    width="100" />
 </div>
-<h2 align="center">
-  <a href="http://lmfao.tech/" target="_blank"> LMFAO</a>
-</h2>
 
 <p align="center">
 The first iteration of the presentational website for LMFAO
@@ -20,7 +17,7 @@ These technologies were used:
 </h3>
 
 - [React](https://reactjs.org/)
-- HTML / CSS
+- [HTML / CSS](https://www.w3schools.com/html/html_css.asp)
 - [Email JS](https://www.emailjs.com/)
 
 ## Description 
