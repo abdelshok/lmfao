@@ -15,7 +15,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "emailjs-com": "^2.4.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^7.1.3",
